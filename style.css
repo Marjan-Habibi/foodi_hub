@@ -1,0 +1,61 @@
+
+  .food-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #FF6500;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    transition: transform 0.2s ease;
+  }
+
+  .food-button:hover {
+    transform: scale(1.1);
+  }
+   
+ 
+  @keyframes rainbowText {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  
+  .hero-title.rainbow {
+    background: linear-gradient(270deg, #FF6500, #bd08bd, #07d4d4, #09de09, #f3f306, #060606);
+    background-size: 600% 600%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbowText 6s linear infinite;
+  }
+ 
+  /* card food mom */
+  img.img-fluid {
+    width: 100%;
+    height: 180px;       
+    object-fit: cover;    
+  }
+  img.img-fluid {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  img.img-fluid:hover {
+    transform: scale(1.05); /* بزرگ شدن 5% */
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3); /* سایه ملایم */
+    z-index: 10; /* روی بقیه المان‌ها */
+    position: relative;
+  }
+  
+

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marjan | Foodie Hub</title>
+
+   <!-- favaicon -->
+<link rel="icon" type="image/png" href="img/marjan_logo_circular.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    /* Reset basic margin/padding */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      font-family: sans-serif;
+      background-image: url('https://www.zauberdergewuerze.de/magazin/wp-content/uploads/2023/03/05_oregano_istock-1174701047.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    /* Typewriter Animation */
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent }
+    }
+
+    .hero-title.typewriter {
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 3px solid white;
+      width: 0;
+      animation:
+        typing 3s steps(30, end) forwards,
+        blink 0.7s step-end infinite;
+    }
+
+    /* Floating food button */
+    .food-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #FF6500;
+      color: white;
+      padding: 15px;
+      border-radius: 50%;
+      font-size: 20px;
+      z-index: 999;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      text-decoration: none;
+    }
+
+    .food-button:hover {
+      background-color: #e65c00;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Floating Food Button -->
+  <a href="https://marjan-habibi.github.io/restaurant_marjan_habibi/" class="food-button" title="Order Food">
+    <i class="fas fa-utensils"></i>
+  </a>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top" style="background-color: #FF6500;">
+    <div class="container">
+      <a class="navbar-brand text-white" style="font-family: 'Marck Script', cursive;" href="#"><i class="fas fa-pizza-slice"></i>Foodie Hub</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="background-color: white;">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link text-white" href="index.html"><i class="fas fa-home me-2"></i>Home</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="about us.html"><i class="fas fa-utensils me-2"></i>Restaurants</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="restaurant.html"><i class="fas fa-info-circle me-2"></i>About</a></li>
+          <li class="nav-item">
+          <a class="nav-link text-white" href="about us.html#mymom"><i class="fas fa-bread-slice"></i>My Mom’s Special Dishes</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="cantact.html"><i class="fas fa-envelope me-2"></i>Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about" class="container my-5">
+    <div class="row align-items-center">
+      <div class="col-md-6 mb-3">
+        <div class="ratio ratio-16x9">
+          <iframe 
+            src="https://www.youtube.com/embed/m068-xNHpws?start=18" 
+            title="Food video"
+            allow="autoplay"  
+            allowfullscreen>
+          </iframe> 
+        </div>
+      </div>
+      <div class="col-md-6 text-white">
+        <h2>Raviolo al Uovo 🍝</h2>
+        <p>
+          Unlike typical ravioli, this dish features a single, large raviolo filled with ricotta cheese, spinach, and a raw egg yolk in the center.
+          The pasta is cooked just enough to leave the yolk soft and runny. When cut, the golden yolk blends with brown butter and crispy sage on top.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu-1" class="container my-5">
+    <h2 class="hero-title typewriter display-4 fw-bold px-3" style="font-family: 'Marck Script', cursive; color: #FF6500;">
+      Menu for Restaurant One <i class="fas fa-utensils me-2"></i>
+    </h2>
+    <div class="row g-3">
+      <!-- Card 1 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Vegetable tartare</h5>
+            <p class="card-text">Tasty and fresh.</p>
+            <p class="card-text fw-bold">$12.99</p>
+            <span class="badge bg-success">Available</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Snail porridge</h5>
+            <p class="card-text">Spicy and hot.</p>
+            <p class="card-text fw-bold">$9.99</p>
+            <span class="badge bg-danger">Unavailable</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Korean-style foie gras</h5>
+            <p class="card-text">Tasty and fresh.</p>
+            <p class="card-text fw-bold">$12.99</p>
+            <span class="badge bg-success">Available</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Sound of the Sea</h5>
+            <p class="card-text">Seafood with audio experience.</p>
+            <p class="card-text fw-bold">$20.30</p>
+            <span class="badge bg-success">Available</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Ravioli with seasonal herbs</h5>
+            <p class="card-text">Tasty and fresh.</p>
+            <p class="card-text fw-bold">$70.10</p>
+            <span class="badge bg-success">Available</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Mushroom leaf</h5>
+            <p class="card-text">Tasty and fresh.</p>
+            <p class="card-text fw-bold">$22.09</p>
+            <span class="badge bg-danger">Unavailable</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-white py-4 mt-5" style="background-color: #FF6500;">
+    <div class="container text-center">
+      <p class="mb-0">&copy; 2025 All Rights Reserved | Designed by Marjan</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
